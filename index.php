@@ -21,17 +21,17 @@ $mail->SMTPSecure = "tls";
 // port
 $mail->Port ="587";
 // set gmail username
-$mail->Username = "uhururawlings38@gmail.com";
+$mail->Username = "username@gmail.com";
 // set gmail password
-$mail->Password = "raw=lings36455589";
+$mail->Password = "emailpassword";
 // set email subject
 $mail->Subject = "Post Notification";
 // sender
-$mail->setFrom("uhururawlings38@gmail.com");
+$mail->setFrom("sendingemail@gmail.com");
 // email body
-$mail->Body = "You are receiving this email because you signed up to RTECHBLOG post notification";
+$mail->Body = "Your desired email";
 // add recipient
-$mail->addAddress("rawlings.huru@student.moringaschool.com");
+$mail->addAddress("destination@gmail.com");
 // send
 if($mail->Send()){
     echo("Email sent...");
